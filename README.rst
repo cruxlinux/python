@@ -25,9 +25,9 @@ Python Interpreter:
 
 As a Base Image:
 
-This image contains ``ONBUIDL`` triggers so you can use this as a base
-image on a stnadard python application source tree that contains a valid
-top-level ``requirements.txt`` adn ``setup.py``.
+This image contains ``ONBUILD`` triggers so you can use this as a base
+image on a standard python application source tree that contains a valid
+top-level ``requirements.txt`` and ``setup.py``.
 
 Example ``Dockerfile``::
     
