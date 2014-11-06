@@ -21,16 +21,19 @@ Python Interpreter:
 
 ::
     
-    docker run -i -t cruxlinux/python
+    docker run -i -t crux/python
 
 As a Base Image:
 
-This image contains ``ONBUILD`` triggers so you can use this as a base
-image on a standard python application source tree that contains a valid
-top-level ``requirements.txt`` and ``setup.py``.
+A ``onbuild`` tag is provided that uses ``ONBUILD`` triggers which you can
+use as a base image for a standard python application. This assumes your
+source tree has two top-level source files:
+
+- ``requirements.txt``
+- ``setup.py``
 
 Example ``Dockerfile``::
     
-    FROM cruxlinux/python
+    FROM crux/python:onbuild
 
     CMD ["myapp"]
