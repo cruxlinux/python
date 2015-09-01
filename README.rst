@@ -10,6 +10,8 @@ Features:
 - python
 - setuptools
 - pip
+- git
+- mercurial
 
 Ready to run your Python apps!
 
